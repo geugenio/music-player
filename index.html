@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script defer src="JavaScript/scripts.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My fav songs</title>
+</head>
+<body class="body">
+    <div class="player">
+        <div class="wrapper">
+            <div class="descricao">
+                <div class="contador-musicas">Musica x de y</div>
+                <div class="album-cover"></div>
+                <div class="nome-musica"></div>
+                <div class="nome-artista"></div>
+            </div>
+
+            <div class="slider-container">
+                <div class="tempo-atual">00:00</div>
+                <input type="range" min = "1" max="100" value = "0" class="aparecer-slider" onchange= "seekTo()">
+                <div class="duracao-total">00:00</div>
+            </div>
+            <div class="slider-container">
+                <i class="fa fa-volume-off"></i>
+                <input type="range" min = "1" max="100" value="99" class="volume-slider" onchange= "setVolume()">
+                <i class="fa fa-volume-high"></i>
+            </div>
+
+            <div class="botoes">
+                <div class="m-aleatoria botao" onclick="randomSong()">
+                    <i class="fas fa-random fa-2x"></i>
+                </div>
+                <div class="m-anterior botao" onclick="mAnterior()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="m-play-pause botao" onclick="playPause()">
+                    <i class="fa fa-play-circle fa-3x"></i>
+                </div>
+                <div class="m-proxima botao" onclick="mProxima()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="m-repetir botao" onclick="mRepetir()">
+                    <i class="fa fa-repeat fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="wave">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
