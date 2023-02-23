@@ -76,14 +76,14 @@ body{
     align-items: center;
 }
 
-.aparecer-slider, .volume-slider{
+.progresso-atual, .volume-slider{
     appearance: none;
     height: 5px;
     background: #83ff8d;
     transition: opacity 0.2s;
 }
 
-.aparecer-slider::-webkit-slider-thumb, 
+.progresso-atual::-webkit-slider-thumb, 
 .volume-slider::-webkit-slider-thumb{
     appearance: none;
     -webkit-appearence: none;
@@ -95,11 +95,11 @@ body{
     cursor: pointer;
 }
 
-.aparecer-slider:hover, .volume-slider:hover{
+.progresso-atual:hover, .volume-slider:hover{
     opacity: 1.0;
 }
 
-.aparecer-slider{
+.progresso-atual{
     width: 60%;
 }
 .volume-slider{
@@ -118,16 +118,18 @@ i.fa-fa-volume-off, i.fa-fa-volume-high{
 i, i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-stepbeckward{
     cursor: pointer;
 }
+#pause{
+    display: none;
+}
 
 /* Classes a serem adicionadas no JS */
 
-.randomAtivado{
+.RRAtivado{
     color: rgb(8, 139, 52);
 }
 .rotacionar{
     animation: rotation 8s linear infinite;
 }
-
 
 /* Linhas de movimento */
 

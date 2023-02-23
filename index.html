@@ -22,7 +22,7 @@
 
             <div class="slider-container">
                 <div class="tempo-atual">00:00</div>
-                <input type="range" min = "1" max="100" value = "0" class="aparecer-slider" onchange= "seekTo()">
+                <input type="range" min = "1" max="100" value = "0" class="progresso-atual">
                 <div class="duracao-total">00:00</div>
             </div>
             <div class="slider-container">
@@ -32,21 +32,12 @@
             </div>
 
             <div class="botoes">
-                <div class="m-aleatoria botao" onclick="randomSong()">
-                    <i class="fas fa-random fa-2x"></i>
-                </div>
-                <div class="m-anterior botao" onclick="mAnterior()">
-                    <i class="fa fa-step-backward fa-2x"></i>
-                </div>
-                <div class="m-play-pause botao" onclick="playPause()">
-                    <i class="fa fa-play-circle fa-3x"></i>
-                </div>
-                <div class="m-proxima botao" onclick="mProxima()">
-                    <i class="fa fa-step-forward fa-2x"></i>
-                </div>
-                <div class="m-repetir botao" onclick="mRepetir()">
-                    <i class="fa fa-repeat fa-2x"></i>
-                </div>
+                <i class="fas fa-random fa-2x botao"></i>
+                <i class="fa fa-step-backward fa-2x botao"></i>
+                <i id="play" class="fa fa-play-circle fa-3x botao"></i>
+                <i id="pause"class="fa fa-pause-circle fa-3x botao"></i>
+                <i class="fa fa-step-forward fa-2x botao"></i>
+                <i class="fa fa-repeat fa-2x botao"></i>
             </div>
 
             <div class="wave">
