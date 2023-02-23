@@ -22,8 +22,6 @@ let tempoAtual = document.querySelector(".tempo-atual");
 let tempoTotal = document.querySelector(".duracao-total");
 let wave = document.querySelector(".wave");
 
-let randomIcon = document.querySelector(".fa-random");
-
 let curr_track = document.createElement("audio");
 let index_track = 0;
 let isPlaying = false;
