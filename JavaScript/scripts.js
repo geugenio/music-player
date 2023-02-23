@@ -61,7 +61,7 @@ const music_list = [
 //Carrega a primeira musica do array
 carregaMusica(index_track);
 
-
+contadorMusicas.textContent = "Musica " + (index_track +1) + " de " + music_list.length; 
 //Botões
 mPlay_btn.addEventListener("click", playMusic);
 mPause_btn.addEventListener("click", pauseMusic);
